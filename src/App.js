@@ -1,9 +1,9 @@
-import React from 'react'
-import './App.css';
+import React from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav'
+import Nav from 'react-bootstrap/Nav';
+import './App.css';
 
 // my imports
 import Footer from "./components/Footer";
@@ -57,6 +57,7 @@ class App extends React.Component {
           <Link className="nav-link" to='/'>Home</Link>
           <Link className="nav-link" to='/about'>Profile</Link>
           <Link className="nav-link" to='/contact'>Contact me</Link>
+          {/* <Link className="nav-link" href='https://github.com/tbonexas'>My GitHub</Link> */}
           
 
         </Nav>
