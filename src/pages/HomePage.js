@@ -1,11 +1,15 @@
 import React from 'react';
 import Info from '../components/Info';
+import Carousel from "../components/Carousel"
 
 
 // don't need states for home page // 
 function HomePage(props) {
   return (
-      <Info title={props.title} subtitle={props.subtitle} text={props.text}/>
+    <div>
+      <Info title={props.title} subtitle={props.subtitle} text={props.text} />
+      <Carousel />
+      </div>
   )
 }
 

@@ -18,16 +18,16 @@ class App extends React.Component {
     super(props);
     // state for title in navbar top level of site //
     this.state ={
-     title: 'Todd Murdoch Wayment',
-     headerLinks: [ //will have everything needed for my navbar // 
+     title: 'Todd M. Wayment',
+     headerLinks: [ // will have everything needed for my navbar // 
        { title: "Home", path: '/'},
        { title: "About", path: '/about'},
        { title: "Contact", path: '/contact'}
      ],
       home: {
-        title: "Never close a window to opportunity.",
-        subtitle: "Especially, if the breeze is refreshing",
-        text: "Take a look at my GitHub projects below:"
+        title: "Windows of Opportunity,",
+        subtitle: "Always provide a refreshing breeze.",
+        text: "Here are my projects below:"
       },
       about: {
         title: "Who I am and What I do:",
@@ -49,7 +49,7 @@ class App extends React.Component {
       <Container className="p-0"fluid={true}>
       
       <Navbar className="border-bottom" bg="transparent" expand="lg">
-      <Navbar.Brand>Todd Murdoch Wayment</Navbar.Brand>
+      <Navbar.Brand>Todd M. Wayment</Navbar.Brand>
 
       <Navbar.Toggle aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">
