@@ -5,7 +5,7 @@ import Card from "../components/Card"
 // Photo imports for Carousel // 
 import hub from "../assets/images/hub.jpg"
 import linked from "../assets/images/linked.jpg"
-import facebook from "../assets/images/facebook.jpg"
+import facebook from "../assets/images/facebook.JPEG"
 import { Container, Row } from 'react-bootstrap';
 
 
@@ -24,28 +24,34 @@ class Carousel extends React.Component {
                     link: 'https://github.com/Tbonexas',
                     selected: false
                 },
+               
                 {
                     id: 1,
+                    title: "Facebook",
+                    subtitle: "My Facebook Profile",
+                    imgSrc: facebook,
+                    link: 'https:facebook.com/toddwayment',
+                    selected: false
+                },
+
+                {
+                    id: 2,
                     title: "LinkedIn",
                     subtitle: "My LinkedIn Profile",
                     imgSrc: linked,
                     link: 'https://www.linkedin.com/in/todd-murdoch',
                     selected: false
                 },
-                {
-                    id: 2,
-                    title: "Facebook",
-                    subtitle: "My Facebook Profile",
-                    imgSrc: facebook,
-                    link: 'https:facebook.com/toddwayment',
-                    selected: false
-                }
             ]
         }
     }
 
 // Creates a click method for the carousel links with a spread operator for items - items selcted false or true to toggle information//     
     handleCardClick = (id, card) => {
+
+        // console.log(id); 
+
+
         let items = [...this.state.items];
 
         items[id].selected = items[id].selected ? false : true;
@@ -66,7 +72,7 @@ class Carousel extends React.Component {
 // create a method that creats a card component for each item // 
         makeItems = (items) => {
             return items.map(item => {
-                return <Card item={item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id} />
+                return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
             })
         }
 

@@ -9,7 +9,7 @@ function HomePage(props) {
     <div>
       <Info title={props.title} subtitle={props.subtitle} text={props.text} />
       <Carousel />
-      </div>
+    </div>
   )
 }
 

@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.t-card {
+  margin: 20px;
+
+}
+
+.t-card-image {
+  border-radius: 10px;
+  width: 300px;
+  height: 380px;
+  box-shadow: 0px 0px 4px 1.5px #ccc
+}
+
+.t-card-info {
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.t-card-title {
+  font-size: 24px;
+  margin: 0px
+}
+
+.t-card-subtitle {
+  font-size: 16px;
+  margin: 0px;
+}

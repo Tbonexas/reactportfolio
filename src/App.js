@@ -27,7 +27,7 @@ class App extends React.Component {
       home: {
         title: "Windows of Opportunity,",
         subtitle: "Always provide a refreshing breeze.",
-        text: "Here are my projects below:"
+        text: "Below is my information:"
       },
       about: {
         title: "Who I am and What I do:",
@@ -57,7 +57,7 @@ class App extends React.Component {
           <Link className="nav-link" to='/'>Home</Link>
           <Link className="nav-link" to='/about'>Profile</Link>
           <Link className="nav-link" to='/contact'>Contact me</Link>
-          {/* <Link className="nav-link" href='https://github.com/tbonexas'>My GitHub</Link> */}
+         
           
 
         </Nav>
