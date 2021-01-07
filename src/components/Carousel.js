@@ -19,7 +19,7 @@ class Carousel extends React.Component {
                 {
                     id: 0,
                     title: "GitHub",
-                    subtitle: "All of my Repositories",
+                    subtitle: "My projects and repositories!",
                     imgSrc: hub,
                     link: 'https://github.com/Tbonexas',
                     selected: false
@@ -27,19 +27,20 @@ class Carousel extends React.Component {
                
                 {
                     id: 1,
-                    title: "Facebook",
-                    subtitle: "My Facebook Profile",
+                    title: "Resume",
+                    subtitle: "Take a look at my Resume on LinkedIn!",
                     imgSrc: facebook,
-                    link: 'https:facebook.com/toddwayment',
+                    link: 'https://www.linkedin.com/in/todd-murdoch',
                     selected: false
+                   
                 },
 
                 {
                     id: 2,
-                    title: "LinkedIn",
-                    subtitle: "My LinkedIn Profile",
+                    title: "Facebook",
+                    subtitle: "Feel free to contact me on facebook messenger!",
                     imgSrc: linked,
-                    link: 'https://www.linkedin.com/in/todd-murdoch',
+                    link: 'https:facebook.com/toddwayment',
                     selected: false
                 },
             ]
@@ -48,7 +49,7 @@ class Carousel extends React.Component {
 
 // Creates a click method for the carousel links with a spread operator for items - items selcted false or true to toggle information//     
     handleCardClick = (id, card) => {
-
+// Console log to check the ID upon click // 
         // console.log(id); 
 
 

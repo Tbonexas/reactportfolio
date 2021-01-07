@@ -9,7 +9,7 @@ import './App.css';
 import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
+
 
 
 class App extends React.Component {
@@ -48,15 +48,15 @@ class App extends React.Component {
     <Router>
       <Container className="p-0"fluid={true}>
       
-      <Navbar className="border-bottom" bg="transparent" expand="lg">
-      <Navbar.Brand>Todd M. Wayment</Navbar.Brand>
+      <Navbar className="border-bottom" bg="transparent" expand="lg" bcClass="customNav">
+      <Navbar.Brand>React Portfolio</Navbar.Brand>
 
       <Navbar.Toggle aria-controls="navbar-toggle" />
       <Navbar.Collapse id="navbar-toggle">
         <Nav className="ml-auto">
           <Link className="nav-link" to='/'>Home</Link>
           <Link className="nav-link" to='/about'>Profile</Link>
-          <Link className="nav-link" to='/contact'>Contact me</Link>
+          
          
           
 
@@ -66,7 +66,7 @@ class App extends React.Component {
 
       <Route path='/' exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
       <Route path='/about' render={() => <AboutPage title={this.state.about.title} /> } />
-      <Route path='/contact' render={() => <ContactPage title={this.state.contact.title} /> } />
+      
       <Footer />
       </Container>
 
