@@ -27,20 +27,22 @@ class Carousel extends React.Component {
                
                 {
                     id: 1,
-                    title: "Resume",
-                    subtitle: "Take a look at my Resume on LinkedIn!",
-                    imgSrc: facebook,
-                    link: 'https://www.linkedin.com/in/todd-murdoch',
-                    selected: false
-                   
-                },
-
-                {
-                    id: 2,
                     title: "Facebook",
                     subtitle: "Feel free to contact me on facebook messenger!",
                     imgSrc: linked,
                     link: 'https:facebook.com/toddwayment',
+                    selected: false
+                   
+                   
+                },
+
+                {
+                    
+                    id: 2,
+                    title: "Resume",
+                    subtitle: "Take a look at my Resume on LinkedIn!",
+                    imgSrc: facebook,
+                    link: 'https://www.linkedin.com/in/todd-murdoch',
                     selected: false
                 },
             ]
